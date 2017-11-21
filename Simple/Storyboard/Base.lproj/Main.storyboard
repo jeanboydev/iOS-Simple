@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qM3-Nz-Oab">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="LYc-EI-i6n">
+            <objects>
+                <viewController id="qM3-Nz-Oab" customClass="MainViewController" customModule="Simple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Typ-dc-ULj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="演示项目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD5-r4-87U">
+                                <rect key="frame" x="0.0" y="50" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="htX-us-qKa">
+                                <rect key="frame" x="0.0" y="116" width="375" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxn-vA-Yy2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="V6v-jD-Vd3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Lock View"/>
+                                        <connections>
+                                            <segue destination="paO-QZ-b86" kind="show" id="E26-rq-QEy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5t-Uv-mbr">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Utq-Oa-bio"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Weather Demo"/>
+                                        <connections>
+                                            <segue destination="Hg5-Nm-ggh" kind="show" id="m92-vr-AFe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VW9-XO-Y9y">
+                                        <rect key="frame" x="0.0" y="130" width="375" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="lfw-E7-9Z3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Navigation Controller"/>
+                                        <connections>
+                                            <segue destination="EcA-pT-Lda" kind="show" id="lzH-Yh-LDD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1c-Qi-9xk">
+                                        <rect key="frame" x="0.0" y="195" width="375" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="oDL-Bd-qan"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="SnapKit"/>
+                                        <connections>
+                                            <segue destination="99F-Sk-zUU" kind="show" id="7vD-3H-cYg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="htX-us-qKa" firstAttribute="centerX" secondItem="Typ-dc-ULj" secondAttribute="centerX" id="4CX-Wq-V36"/>
+                            <constraint firstItem="dD5-r4-87U" firstAttribute="centerX" secondItem="Typ-dc-ULj" secondAttribute="centerX" id="6NR-7H-vXg"/>
+                            <constraint firstItem="htX-us-qKa" firstAttribute="leading" secondItem="TKT-w4-48J" secondAttribute="leading" id="W4H-KC-7Wz"/>
+                            <constraint firstItem="dD5-r4-87U" firstAttribute="leading" secondItem="TKT-w4-48J" secondAttribute="leading" id="XFe-qY-hMm"/>
+                            <constraint firstItem="TKT-w4-48J" firstAttribute="trailing" secondItem="dD5-r4-87U" secondAttribute="trailing" id="Yef-r3-ggh"/>
+                            <constraint firstItem="htX-us-qKa" firstAttribute="top" secondItem="dD5-r4-87U" secondAttribute="bottom" constant="30" id="bZf-zi-fL5"/>
+                            <constraint firstItem="TKT-w4-48J" firstAttribute="trailing" secondItem="htX-us-qKa" secondAttribute="trailing" id="eJx-YH-UHw"/>
+                            <constraint firstItem="dD5-r4-87U" firstAttribute="top" secondItem="TKT-w4-48J" secondAttribute="top" constant="30" id="eQt-hW-oKO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TKT-w4-48J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AgN-4p-A9P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BsF-aR-pgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762.39999999999998" y="118.29085457271366"/>
+        </scene>
+        <!--LockView-->
+        <scene sceneID="1VQ-eH-bcY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LockView" id="paO-QZ-b86" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgd-jb-5yR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="118"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="fRF-kc-ohY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Weather" id="Hg5-Nm-ggh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzV-38-ogB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="178"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="2uy-8K-iH4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" id="EcA-pT-Lda" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEp-Il-33W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="235"/>
+        </scene>
+        <!--SnapKit-->
+        <scene sceneID="yMn-1A-l5b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SnapKit" id="99F-Sk-zUU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQd-6s-q3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96" y="293"/>
+        </scene>
+    </scenes>
+</document>
